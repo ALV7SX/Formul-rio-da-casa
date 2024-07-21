@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto do Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Cadastre sua casa e venda de forma rápida !!</h3>
+        </div>
+
+        <div class="form_container">
+            <div class="form_header">
+                <p>Formulário</p>
+            </div>
+
+            <div class="form_body">
+                <h1 class="form_title">Venda fácil sua casa</h1>
+                <p>Descreva as características e marque os opcionais que sua casa possui</p>
+
+                <form>
+                    <div class="box_input">
+                    <label for="title">Título do anúncio <span class="required_field">*</span></label>
+
+                    <input type="text" name="title" id="title" class="block" placeholder="Um título para anunciar" minlength="1" maxlength="30" required>
+                    </div>
+
+                    <div class="box_input">
+                    <label for="price">Preço <span class="required_field">*</span></label>
+
+                    <input type="number" name="price" id="price" class="block" placeholder="Defina o preço" required>
+                    </div>
+
+                    <div class="box_input">
+                    <label for="description">Descrição <span class="required_field">*</span></label>
+                    
+                    <textarea name="description" id="description" class="block" placeholder="Aqui você colocar os detalhes da casa"></textarea>
+                    </div>
+
+                    <div class="box_input">
+                    <label for="brand">Local <span class="required_field">*</span></label>
+    
+                    <input type="text" name="brand" id="brand" class="block" placeholder="Digite o local" required>
+                    </div>
+
+                    <div class="box_input">
+                    <label for="model">Modelo <span class="required_field">*</span></label>
+    
+                    <input type="text" name="model" id="model" class="block" placeholder="Digite o modelo da casa" required>
+                    </div>
+
+                    <div class="box_input">
+                    <label for="mileage">Tamanho <span class="required_field">*</span></label>
+    
+                    <input type="number" name="mileage" id="mileage" class="block" placeholder="Digite o tamanho da casa" required>
+                    </div>
+
+                    <div class="box_input">
+                    <label for="purchase_date">Data que ficou pronta <span class="required_field">*</span></label>
+    
+                    <input type="date" name="purchase_date" id="purchase_date" class="block"  required>
+                    </div>
+
+                    <div class="box_input">
+                    <p>Tipo de casa: <span class="required_field">*</span></p>
+    
+                    <input type="radio" id="manual"  name="gear">
+                    <label for="manual">1 andar</label>
+
+                    <input type="radio" id="auto"  name="gear">
+                    <label for="auto">2 ou mais andares</label>
+                    </div>
+
+                    <div class="optional_box">
+                    <p>Opcionais</p>
+                    <ul class="optional_list">
+                        <li>
+                            <input type="checkbox" name="optional[]" id="airbag" value="airbag">
+                            <label for="airbag">Mudar de cor</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="optional[]" id="alarm" value="alarm">
+                            <label for="alarm">Janelas diferentes</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="optional[]" id="ac" value="ac">
+                            <label for="ac">Ar condicionado</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="optional[]" id="reverse_camera" value="reverse_camera">
+                            <label for="reverse_camera">Cameras</label>
+                        </li>
+                    </ul>
+
+                    </div>
+
+                    <div class="optional_box">
+
+                    <ul class="optional_list">
+                        <li>
+                            <input type="checkbox" name="optional[]" id="lane_assist" value="lane_assist">
+                            <label for="lane_assist">Alexa</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="optional[]" id="keyless" value="keyless">
+                            <label for="keyless">Portão automático</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="optional[]" id="smartphone" value="smartphone">
+                            <label for="smartphone">Integração com o celular</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="optional[]" id="leather_seat" value="leather_seat">
+                            <label for="leather_seat">Suits</label>
+                        </li>
+                    </ul>
+
+                    </div>
+                    <div class="box_input">
+                        <p>Fotos da casa: <span class="required_field">*</span></p>
+                        <input type="file" multiple accept="image/png, img/jpg" id="images" name="images" required>
+                    </div>
+
+                    <input type="submit" value="Enviar" class="btn_submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
